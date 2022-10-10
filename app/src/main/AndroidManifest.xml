@@ -23,6 +23,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".CalendarActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".GroupsActivity"/>
+        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".SignupActivity" />
     </application>
 
 </manifest>

@@ -6,34 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
-
-    <Button
-        android:id="@+id/preferencesButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="487dp"
-        android:backgroundTint="#159BFC"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Preferences"
-        android:textAlignment="textStart"
-        android:textAllCaps="false"
-        android:textSize="25sp"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
-
     <Button
         android:id="@+id/appearanceButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="14dp"
+        android:layout_width="399dp"
+        android:layout_height="75sp"
+        android:layout_marginTop="80dp"
         android:backgroundTint="#159BFC"
         android:fontFamily="@font/poppins_medium"
         android:text="Appearance"
@@ -41,18 +18,69 @@
         android:textAllCaps="false"
         android:textSize="25sp"
         app:cornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/settingsButton"
+        app:layout_constraintEnd_toEndOf="@+id/plus1"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extension3" />
+
+    <Button
+        android:id="@+id/plus1"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="+"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extension3" />
+
+    <Button
+        android:id="@+id/preferencesButton"
+        android:layout_width="399dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Preferences"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
+
+    <TextView
+        android:id="@+id/extension2"
+        android:layout_width="399dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="40dp"
+        android:background="#A7DDFF"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/preferencesButton" />
+
+    <TextView
+        android:id="@+id/extension3"
+        android:layout_width="412dp"
+        android:layout_height="157dp"
+        android:background="#79CBFF"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/settingsButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="11dp"
+        android:layout_width="399dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#159BFC"
         android:fontFamily="@font/poppins_medium"
         android:text="Settings"
@@ -60,93 +88,110 @@
         android:textAllCaps="false"
         android:textSize="25sp"
         app:cornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/preferencesButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appearanceButton" />
 
     <TextView
-        android:id="@+id/imageView3"
-        android:layout_width="415dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="426dp"
+        android:id="@+id/bottomBar"
+        android:layout_width="415sp"
+        android:layout_height="85sp"
         android:background="@color/blue_primary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/preferencesButton" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/addFriend"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.268"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.521"
-
-        app:srcCompat="@drawable/addfriend" />
-
-    <ImageButton
-        android:id="@+id/calendar"
-        android:layout_width="50dp"
-        android:layout_height="44dp"
+        android:id="@+id/calendarButton"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.726"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.565"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBar"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomBar"
+        app:layout_constraintVertical_bias="0.615"
         app:srcCompat="@drawable/calendar" />
 
     <ImageButton
-        android:id="@+id/circle"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/profileButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBar"
         app:layout_constraintHorizontal_bias="0.95"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomBar"
         app:layout_constraintVertical_bias="0.523"
-        app:srcCompat="@drawable/profilecircle" />
+        app:srcCompat="@drawable/samplepfp" />
 
     <ImageButton
-        android:id="@+id/groups"
-        android:layout_width="50dp"
-        android:layout_height="46dp"
+        android:id="@+id/groupsButton"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.523"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBar"
         app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomBar"
+        app:layout_constraintVertical_bias="0.523"
         app:srcCompat="@drawable/groups" />
 
     <ImageButton
-        android:id="@+id/home"
-        android:layout_width="50dp"
-        android:layout_height="49dp"
+        android:id="@+id/homeButton"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBar"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomBar"
+        app:layout_constraintVertical_bias="0.516"
         app:srcCompat="@drawable/home" />
 
+    <Button
+        android:id="@+id/plus2"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="+"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extension3" />
+
+    <Button
+        android:id="@+id/plus3"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="-"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extension3" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

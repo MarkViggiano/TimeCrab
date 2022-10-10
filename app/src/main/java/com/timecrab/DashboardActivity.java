@@ -17,7 +17,6 @@ public class DashboardActivity extends AppCompatActivity {
         ImageButton groupsButton = findViewById(R.id.groupsButton);
         groupsButton.setOnClickListener((View v) -> startActivity(new Intent(this, GroupsActivity.class)));
 
-        //TODO: Make "add friend" activity
         /*
         ImageButton addFriendButton = findViewById(R.id.addfriendButton);
         addFriendButton.setOnClickListener((View v) -> startActivity(new Intent(this, AddFriendActivity.class)));

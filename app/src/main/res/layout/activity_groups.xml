@@ -121,7 +121,7 @@
     <TextView
         android:id="@+id/bottomNav"
         android:layout_width="412dp"
-        android:layout_height="60dp"
+        android:layout_height="85dp"
         android:background="#009BFC"
         android:fontFamily="@font/acme"
         android:paddingLeft="15dp"
@@ -204,7 +204,7 @@
         android:id="@+id/plus"
         android:layout_width="86dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="76dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/poppins_medium"
         android:text="+"
@@ -214,38 +214,14 @@
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/homeButton"
         app:layout_constraintEnd_toEndOf="@+id/newgroup"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.977"
         app:layout_constraintStart_toStartOf="@+id/newgroup" />
 
     <ImageButton
-        android:id="@+id/homeButton"
-        android:layout_width="50dp"
-        android:layout_height="49dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
-        app:layout_constraintTop_toTopOf="@+id/bottomNav"
-        app:layout_constraintVertical_bias="0.636"
-        app:srcCompat="@drawable/home"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/groupsButton"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addfriendButton"
-        app:layout_constraintTop_toTopOf="@+id/bottomNav"
-        app:layout_constraintVertical_bias="0.533"
-        app:srcCompat="@drawable/groups"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="32dp"
+        android:id="@+id/calendarButton"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/profileButton"
         app:layout_constraintTop_toTopOf="@+id/bottomNav"
@@ -254,29 +230,41 @@
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/calendarButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/home"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/groupsButton"
+        android:layout_width="70dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/groups"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageButton
         android:id="@+id/profileButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/bottomNav"
         app:layout_constraintTop_toTopOf="@+id/bottomNav"
         app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/profilecircle"
+        app:srcCompat="@drawable/samplepfp"
         tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/addfriendButton"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/home"
-        app:layout_constraintTop_toTopOf="@+id/bottomNav"
-        app:layout_constraintVertical_bias="0.583"
-        app:srcCompat="@drawable/addfriend"
-        tools:ignore="SpeakableTextPresentCheck" />
-
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

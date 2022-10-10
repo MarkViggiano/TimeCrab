@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/bottomNav2"
         android:layout_width="412dp"
-        android:layout_height="60dp"
+        android:layout_height="85dp"
         android:background="#009BFC"
         android:fontFamily="@font/acme"
         android:paddingLeft="15dp"
@@ -199,8 +199,8 @@
 
     <ImageButton
         android:id="@+id/homeButton"
-        android:layout_width="50dp"
-        android:layout_height="49dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNav2"
         app:layout_constraintEnd_toStartOf="@+id/calendarButton"
@@ -211,8 +211,8 @@
 
     <ImageButton
         android:id="@+id/calendarButton"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/profileButton"
@@ -222,35 +222,23 @@
 
     <ImageButton
         android:id="@+id/profileButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/bottomNav2"
         app:layout_constraintTop_toTopOf="@+id/bottomNav2"
-        app:srcCompat="@drawable/profilecircle" />
+        app:srcCompat="@drawable/samplepfp" />
 
     <ImageButton
         android:id="@+id/groupsButton"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:layout_marginEnd="32dp"
+        android:layout_width="70dp"
+        android:layout_height="76dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addfriendButton"
         app:layout_constraintTop_toTopOf="@+id/bottomNav2"
         app:layout_constraintVertical_bias="0.666"
-        app:srcCompat="@drawable/groups" />
-
-    <ImageButton
-        android:id="@+id/addfriendButton"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNav2"
-        app:layout_constraintEnd_toStartOf="@+id/homeButton"
-        app:layout_constraintTop_toTopOf="@+id/bottomNav2"
-        app:layout_constraintVertical_bias="0.666"
-        app:srcCompat="@drawable/addfriend" />
+        app:srcCompat="@drawable/groups"
+        tools:layout_editor_absoluteX="18dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
