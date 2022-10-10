@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupsActivity">
+
+
+    <Button
+        android:id="@+id/group1"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="76dp"
+        android:text="Group Name"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group4" />
+
+    <Button
+        android:id="@+id/group2"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="76dp"
+        android:text="Group Name"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <Button
+        android:id="@+id/group3"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="76dp"
+        android:text="Group Name"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group2" />
+
+    <Button
+        android:id="@+id/group4"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="76dp"
+        android:text="Group Name"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group3" />
+
+
+    <Button
+        android:id="@+id/newgroup"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#01BE2D"
+        android:fontFamily="@font/poppins_medium"
+        android:text="New Group"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="412dp"
+        android:layout_height="40dp"
+        android:background="#A7DDFF"
+        android:fontFamily="@font/acme"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="January 01, 2022"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bottomNav"
+        android:layout_width="412dp"
+        android:layout_height="60dp"
+        android:background="#009BFC"
+        android:fontFamily="@font/acme"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/arrow1"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text=">"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/group2"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <Button
+        android:id="@+id/arrow2"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text=">"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="@+id/group3"
+        app:layout_constraintTop_toBottomOf="@+id/group2" />
+
+    <Button
+        android:id="@+id/arrow3"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text=">"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="@+id/group4"
+        app:layout_constraintTop_toBottomOf="@+id/group3" />
+
+    <Button
+        android:id="@+id/arrow4"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="308dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text=">"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="@+id/group1"
+        app:layout_constraintTop_toBottomOf="@+id/group4" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="+"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="@+id/newgroup"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/newgroup" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/home"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/groupsButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addfriendButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/groups"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profileButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/calendar"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bottomNav"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/profilecircle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/addfriendButton"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.583"
+        app:srcCompat="@drawable/addfriend"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="338dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="346dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/group2"
+        app:layout_constraintStart_toStartOf="@+id/group2"
+        app:layout_constraintTop_toTopOf="@+id/group2"
+        app:layout_constraintVertical_bias="0.526"
+        app:srcCompat="@drawable/profilecircle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/group3"
+        app:layout_constraintStart_toStartOf="@+id/group3"
+        app:layout_constraintTop_toTopOf="@+id/group3"
+        app:layout_constraintVertical_bias="0.473"
+        app:srcCompat="@drawable/profilecircle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/group1"
+        app:layout_constraintStart_toStartOf="@+id/group1"
+        app:layout_constraintTop_toTopOf="@+id/group1"
+        app:srcCompat="@drawable/profilecircle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/group4"
+        app:layout_constraintStart_toStartOf="@+id/group4"
+        app:layout_constraintTop_toTopOf="@+id/group4"
+        app:layout_constraintVertical_bias="0.526"
+        app:srcCompat="@drawable/profilecircle"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/bottomNav2"
+        android:layout_width="412dp"
+        android:layout_height="60dp"
+        android:background="#009BFC"
+        android:fontFamily="@font/acme"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/upcomingEvents"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Upcoming Events"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="+"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/upcomingEvents"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/upcomingEvents"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <Button
+        android:id="@+id/notifications"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Notifications"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingEvents" />
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Schedule"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/previousEvents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifications" />
+
+    <Button
+        android:id="@+id/previousEvents"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#159BFC"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Previous Events"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schedule" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="412dp"
+        android:layout_height="40dp"
+        android:background="#A7DDFF"
+        android:fontFamily="@font/acme"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="January 01, 2022"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/extension"
+        android:layout_width="395dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:background="#A7DDFF"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/previousEvents" />
+
+
+    <Button
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="+"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/notifications"
+        app:layout_constraintTop_toBottomOf="@+id/schedule" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="+"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/notifications"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingEvents" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/plus"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/notifications"
+        app:layout_constraintTop_toBottomOf="@+id/notifications" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav2"
+        app:layout_constraintEnd_toStartOf="@+id/calendarButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav2"
+        app:layout_constraintVertical_bias="0.727"
+        app:srcCompat="@drawable/home"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/calendarButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profileButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav2"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bottomNav2"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav2"
+        app:srcCompat="@drawable/profilecircle" />
+
+    <ImageButton
+        android:id="@+id/groupsButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addfriendButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav2"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/groups" />
+
+    <ImageButton
+        android:id="@+id/addfriendButton"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav2"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav2"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/addfriend" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
