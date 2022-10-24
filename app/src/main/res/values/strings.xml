@@ -31,4 +31,11 @@
     <string name="personalization">Personalization</string>
     <string name="welcome_to_timecrab">Welcome to TimeCrab!</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="enter_friend_code">Enter Friend Code...</string>
+    <string name="add">Add</string>
+    <string name="sample_phone_number">+1 (555)-555-5555</string>
+    <string name="sample_friend_code">Friend Code: AAAA-0000</string>
+    <string name="profile_name">Jane Doe</string>
+    <string name="edit">Edit</string>
+    <string name="add_friend">Add Friend</string>
 </resources>

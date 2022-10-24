@@ -84,7 +84,7 @@
         android:layout_marginTop="20sp"
         android:layout_marginEnd="8sp"
         android:layout_marginBottom="20sp"
-        android:backgroundTint="#159BFC"
+        android:backgroundTint="@color/timecrab_blue"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/schedule"
         android:textAlignment="textStart"

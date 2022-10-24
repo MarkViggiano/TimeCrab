@@ -6,40 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".GroupsActivity">
 
+
     <Button
         android:id="@+id/group1"
-        android:layout_width="395sp"
-        android:layout_height="75sp"
-        android:layout_marginStart="8sp"
-        android:layout_marginTop="16sp"
-        android:layout_marginEnd="8sp"
-        android:backgroundTint="#159BFC"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/timecrab_blue"
         android:fontFamily="@font/poppins_medium"
-        android:paddingLeft="76sp"
+        android:paddingLeft="76dp"
         android:text="@string/group_name"
         android:textAlignment="textStart"
         android:textAllCaps="false"
-        android:textSize="25sp"
-        app:cornerRadius="15sp"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/group4" />
 
     <Button
         android:id="@+id/group2"
-        android:layout_width="395sp"
-        android:layout_height="75sp"
-        android:layout_marginStart="8sp"
-        android:layout_marginTop="16sp"
-        android:layout_marginEnd="8sp"
-        android:backgroundTint="#159BFC"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/timecrab_blue"
         android:fontFamily="@font/poppins_medium"
-        android:paddingLeft="76sp"
+        android:paddingLeft="76dp"
         android:text="@string/group_name"
         android:textAlignment="textStart"
         android:textAllCaps="false"
-        android:textSize="25sp"
-        app:cornerRadius="15sp"
+        android:textSize="25dp"
+        app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,19 +48,19 @@
 
     <Button
         android:id="@+id/group3"
-        android:layout_width="395sp"
-        android:layout_height="75sp"
-        android:layout_marginStart="8sp"
-        android:layout_marginTop="16sp"
-        android:layout_marginEnd="8sp"
-        android:backgroundTint="#159BFC"
+        android:layout_width="395dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/timecrab_blue"
         android:fontFamily="@font/poppins_medium"
         android:paddingLeft="76sp"
         android:text="@string/group_name"
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:textSize="25sp"
-        app:cornerRadius="15sp"
+        app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/group2" />
@@ -71,7 +72,7 @@
         android:layout_marginStart="8sp"
         android:layout_marginTop="16sp"
         android:layout_marginEnd="8sp"
-        android:backgroundTint="#159BFC"
+        android:backgroundTint="@color/timecrab_blue"
         android:fontFamily="@font/poppins_medium"
         android:paddingLeft="76sp"
         android:text="@string/group_name"
@@ -85,7 +86,7 @@
 
 
     <Button
-        android:id="@+id/newgroup"
+        android:id="@+id/addfriend"
         android:layout_width="395sp"
         android:layout_height="75sp"
         android:layout_marginStart="8sp"
@@ -93,21 +94,40 @@
         android:layout_marginBottom="16sp"
         android:backgroundTint="#01BE2D"
         android:fontFamily="@font/poppins_medium"
-        android:text="@string/new_group"
+        android:text="@string/add_friend"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="25sp"
         app:cornerRadius="15sp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNav"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/newgroup"
+        android:layout_width="395sp"
+        android:layout_height="75sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="8sp"
+        android:backgroundTint="#01BE2D"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/new_group"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:cornerRadius="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group1" />
 
     <TextView
         android:id="@+id/date"
         android:layout_width="412sp"
         android:layout_height="40sp"
-        android:background="#A7DDFF"
+        android:background="@color/blue_secondary"
         android:fontFamily="@font/acme"
         android:paddingLeft="15sp"
         android:paddingTop="10sp"
@@ -119,15 +139,15 @@
 
     <TextView
         android:id="@+id/bottomNav"
-        android:layout_width="412sp"
-        android:layout_height="85sp"
-        android:background="#009BFC"
+        android:layout_width="412dp"
+        android:layout_height="85dp"
+        android:background="@color/timecrab_blue"
         android:fontFamily="@font/acme"
-        android:paddingLeft="15sp"
-        android:paddingTop="10sp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
         android:text=""
         android:textColor="#FFFFFF"
-        android:textSize="50sp"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -186,41 +206,85 @@
 
     <Button
         android:id="@+id/arrow4"
-        android:layout_width="86sp"
-        android:layout_height="0sp"
-        android:layout_marginStart="308sp"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="308dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/text_arrow"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="50sp"
-        app:cornerRadius="15sp"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
         app:layout_constraintStart_toStartOf="@+id/group1"
         app:layout_constraintTop_toBottomOf="@+id/group4" />
 
     <Button
         android:id="@+id/plus"
-        android:layout_width="86sp"
-        android:layout_height="0sp"
-        android:layout_marginBottom="76sp"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/poppins_medium"
-        android:text="@string/plus_sign"
+        android:text="@string/plus"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="50sp"
-        app:cornerRadius="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="@+id/addfriend"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/addfriend" />
+
+    <Button
+        android:id="@+id/plus4"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="@+id/newgroup"
-        app:layout_constraintHorizontal_bias="0.977"
-        app:layout_constraintStart_toStartOf="@+id/newgroup" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/newgroup"
+        app:layout_constraintTop_toBottomOf="@+id/arrow4" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+
+        android:src="@drawable/home"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
+        app:layout_constraintEnd_toStartOf="@+id/calendarButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/home"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/groupsButton"
+        android:src="@drawable/groups"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/bottomNav"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/groups"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/calendarButton"
-        android:layout_width="78sp"
-        android:layout_height="70sp"
-        android:layout_marginEnd="36sp"
+        android:src="@drawable/calendar"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/profileButton"
         app:layout_constraintTop_toTopOf="@+id/bottomNav"
@@ -229,35 +293,11 @@
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/homeButton"
-        android:layout_width="70sp"
-        android:layout_height="70sp"
-        android:layout_marginEnd="36sp"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNav"
-        app:layout_constraintEnd_toStartOf="@+id/calendarButton"
-        app:layout_constraintTop_toTopOf="@+id/bottomNav"
-        app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/home"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/groupsButton"
-        android:layout_width="70sp"
-        android:layout_height="76sp"
-        android:layout_marginEnd="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/homeButton"
-        app:layout_constraintTop_toTopOf="@+id/bottomNav"
-        app:layout_constraintVertical_bias="0.555"
-        app:srcCompat="@drawable/groups"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-
-    <ImageButton
         android:id="@+id/profileButton"
-        android:layout_width="70sp"
-        android:layout_height="70sp"
-        android:layout_marginEnd="8sp"
+        android:src="@drawable/samplepfp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/bottomNav"
         app:layout_constraintTop_toTopOf="@+id/bottomNav"
@@ -265,26 +305,28 @@
         app:srcCompat="@drawable/samplepfp"
         tools:ignore="SpeakableTextPresentCheck" />
 
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="338sp" />
+        app:layout_constraintGuide_begin="338dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="346sp" />
+        app:layout_constraintGuide_begin="346dp" />
 
     <ImageButton
         android:id="@+id/imageButton10"
-        android:layout_width="56sp"
-        android:layout_height="56sp"
-        android:layout_marginStart="8sp"
-        android:elevation="2sp"
+        android:src="@drawable/profilecircle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="@+id/group2"
         app:layout_constraintStart_toStartOf="@+id/group2"
         app:layout_constraintTop_toTopOf="@+id/group2"
@@ -293,11 +335,12 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/circle1"
-        android:layout_width="56sp"
-        android:layout_height="56sp"
-        android:layout_marginStart="8sp"
-        android:elevation="2sp"
+        android:id="@+id/imageButton11"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/profilecircle"
         app:layout_constraintBottom_toBottomOf="@+id/group3"
         app:layout_constraintStart_toStartOf="@+id/group3"
         app:layout_constraintTop_toTopOf="@+id/group3"
@@ -306,11 +349,12 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/circle2"
-        android:layout_width="56sp"
-        android:layout_height="56sp"
-        android:layout_marginStart="8sp"
-        android:elevation="2sp"
+        android:id="@+id/imageButton12"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/profilecircle"
         app:layout_constraintBottom_toBottomOf="@+id/group1"
         app:layout_constraintStart_toStartOf="@+id/group1"
         app:layout_constraintTop_toTopOf="@+id/group1"
@@ -318,17 +362,35 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/circle3"
-        android:layout_width="56sp"
-        android:layout_height="56sp"
-        android:layout_marginStart="8sp"
-        android:elevation="2sp"
+        android:id="@+id/imageButton13"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/profilecircle"
         app:layout_constraintBottom_toBottomOf="@+id/group4"
         app:layout_constraintStart_toStartOf="@+id/group4"
         app:layout_constraintTop_toTopOf="@+id/group4"
         app:layout_constraintVertical_bias="0.526"
         app:srcCompat="@drawable/profilecircle"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <FrameLayout
+        android:id="@+id/fragplaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:elevation="100dp">
+
+    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

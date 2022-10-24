@@ -7,10 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue_primary">#0097F5</color>
-    <color name="blue_secondary">#A7DDFF</color>
-    <color name="timecrab_blue">#159BFC</color>
+    <color name="timecrab_blue">#007FCE</color>
     <color name="timecrab_light_blue">#A7DDFF</color>
     <color name="timecrab_profile_blue1">#79CBFF</color>
     <color name="timecrab_profile_blue2">#A7DDFF</color>
+    <color name="blue_primary">#007FCE</color>
+    <color name="blue_secondary">#A7DDFF</color>
+
 </resources>

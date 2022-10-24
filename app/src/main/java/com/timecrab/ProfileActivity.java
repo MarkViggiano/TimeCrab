@@ -14,20 +14,14 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        ImageButton groupsButton = findViewById(R.id.groupsButton);
+        ImageButton groupsButton = findViewById(R.id.groups);
         groupsButton.setOnClickListener((View v) -> startActivity(new Intent(this, GroupsActivity.class)));
 
-        ImageButton homeButton = findViewById(R.id.homeButton);
+        ImageButton homeButton = findViewById(R.id.home);
         homeButton.setOnClickListener((View v) -> startActivity(new Intent(this, DashboardActivity.class)));
 
-        ImageButton calendarButton = findViewById(R.id.calendarButton);
+        ImageButton calendarButton = findViewById(R.id.calendar);
         calendarButton.setOnClickListener((View v) -> startActivity(new Intent(this, CalendarActivity.class)));
-
-        /*
-        ImageButton profileButton = findViewById(R.id.profileButton);
-        profileButton.setOnClickListener((View v) -> startActivity(new Intent(this, ProfileActivity.class)));
-         */
-
 
     }
 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addFriendFragment"
+    tools:context=".groups.AddFriendFragment">
+
+    <TextView
+        android:id="@+id/fragmentbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:background="#4D000000"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <TextView
+        android:id="@+id/addfriendbuttonbg"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/blue_primary"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/friendcodebox"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/blue_secondary"
+        android:fontFamily="@font/acme"
+        android:paddingLeft="5dp"
+        android:text="@string/enter_friend_code"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addfriendbuttonbg"
+        app:layout_constraintStart_toStartOf="@+id/addfriendbuttonbg"
+        app:layout_constraintTop_toTopOf="@+id/addfriendbuttonbg"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <Button
+        android:id="@+id/addFriendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/blue_secondary"
+        android:fontFamily="@font/acme"
+        android:padding="5dp"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addfriendbuttonbg"
+        app:layout_constraintEnd_toEndOf="@+id/addfriendbuttonbg" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/blue_secondary"
+        android:text="X"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/addfriendbuttonbg"
+        app:layout_constraintTop_toTopOf="@+id/addfriendbuttonbg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
