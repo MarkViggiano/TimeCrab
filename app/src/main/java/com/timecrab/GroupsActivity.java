@@ -19,10 +19,11 @@ public class GroupsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_groups);
 
+        FragmentManager fm = getSupportFragmentManager();
         //add friend button that opens the fragment
         Button addFriendButton = findViewById(R.id.addfriend);
         addFriendButton.setOnClickListener(view -> {
-            FragmentManager fm = getSupportFragmentManager();
+
             AddFriendFragment openFragment = (AddFriendFragment) fm.findFragmentById(R.id.fragplaceholder);
 
             if (openFragment != null && openFragment.isVisible()) return;
@@ -36,18 +37,13 @@ public class GroupsActivity extends AppCompatActivity {
 
         //close the add friend fragment
         AddFriendFragment addFriendFragment = new AddFriendFragment();
-        if (addFriendFragment.getView() != null)
-            addFriendFragment.getView().findViewById(R.id.exit).setOnClickListener(v -> {
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.remove(addFriendFragment);
-                ft.commit();
-            });
+        addFriendFragment.getView().findViewById(R.id.exit).setOnClickListener(v -> {
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.remove(addFriendFragment);
+            ft.commit();
+        });
 
         //bottom navbar
-        ImageButton groupsButton = findViewById(R.id.groupsButton);
-        groupsButton.setOnClickListener((View v) -> startActivity(new Intent(this, GroupsActivity.class)));
-
         ImageButton homeButton = findViewById(R.id.homeButton);
         homeButton.setOnClickListener((View v) -> startActivity(new Intent(GroupsActivity.this, DashboardActivity.class)));
 
