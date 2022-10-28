@@ -1,7 +1,9 @@
 package com.timecrab;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -19,11 +21,10 @@ public class GroupsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_groups);
 
-        FragmentManager fm = getSupportFragmentManager();
         //add friend button that opens the fragment
         Button addFriendButton = findViewById(R.id.addfriend);
         addFriendButton.setOnClickListener(view -> {
-
+            FragmentManager fm = getSupportFragmentManager();
             AddFriendFragment openFragment = (AddFriendFragment) fm.findFragmentById(R.id.fragplaceholder);
 
             if (openFragment != null && openFragment.isVisible()) return;
@@ -33,14 +34,6 @@ public class GroupsActivity extends AppCompatActivity {
             ft.add(R.id.fragplaceholder, addFriend);
             ft.commit();
 
-        });
-
-        //close the add friend fragment
-        AddFriendFragment addFriendFragment = new AddFriendFragment();
-        addFriendFragment.getView().findViewById(R.id.exit).setOnClickListener(v -> {
-            FragmentTransaction ft = fm.beginTransaction();
-            ft.remove(addFriendFragment);
-            ft.commit();
         });
 
         //bottom navbar

@@ -129,20 +129,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/extension"
-        android:layout_width="395sp"
-        android:layout_height="175sp"
-        android:layout_marginStart="8sp"
-        android:layout_marginTop="52sp"
-        android:layout_marginEnd="8sp"
-        android:background="#A7DDFF"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/previousEvents" />
-
 
     <Button
         android:layout_width="86sp"
@@ -205,7 +191,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/bottomNav2"
         app:layout_constraintEnd_toStartOf="@+id/calendarButton"
         app:layout_constraintTop_toTopOf="@+id/bottomNav2"
-        app:layout_constraintVertical_bias="0.727"
         app:srcCompat="@drawable/home"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
@@ -214,10 +199,9 @@
         android:layout_width="78sp"
         android:layout_height="70sp"
         android:layout_marginEnd="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav2"
         app:layout_constraintEnd_toStartOf="@+id/profileButton"
         app:layout_constraintTop_toTopOf="@+id/bottomNav2"
-        app:layout_constraintVertical_bias="0.666"
         app:srcCompat="@drawable/calendar" />
 
     <ImageButton
@@ -235,12 +219,11 @@
         android:layout_width="70sp"
         android:layout_height="76sp"
         android:layout_marginStart="8sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNav2"
         app:layout_constraintEnd_toEndOf="@+id/bottomNav2"
         app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="@+id/bottomNav2"
         app:layout_constraintTop_toTopOf="@+id/bottomNav2"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/groups" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,70 +7,83 @@
     android:id="@+id/addFriendFragment"
     tools:context=".groups.AddFriendFragment">
 
+
     <TextView
         android:id="@+id/fragmentbackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#4D000000"
         android:text=""
-        tools:layout_editor_absoluteX="-16sp"
-        tools:layout_editor_absoluteY="294sp" />
+        tools:layout_editor_absoluteX="-6dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
+    <ImageView
         android:id="@+id/addfriendbuttonbg"
-        android:layout_width="350sp"
-        android:layout_height="200sp"
-        android:layout_marginTop="150sp"
-        android:background="@color/blue_primary"
-        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/addfriendbg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/fragmentbackground" />
 
-
-    <Button
-        android:id="@+id/friendcodebox"
-        android:layout_width="300sp"
-        android:layout_height="50sp"
-        android:layout_marginStart="25sp"
-        android:backgroundTint="@color/blue_secondary"
-        android:fontFamily="@font/acme"
-        android:paddingLeft="5sp"
-        android:text="@string/enter_friend_code"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:cornerRadius="10sp"
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/enterfriendcodebg"
         app:layout_constraintBottom_toBottomOf="@+id/addfriendbuttonbg"
+        app:layout_constraintEnd_toEndOf="@+id/addfriendbuttonbg"
         app:layout_constraintStart_toStartOf="@+id/addfriendbuttonbg"
         app:layout_constraintTop_toTopOf="@+id/addfriendbuttonbg"
-        app:layout_constraintVertical_bias="0.406" />
+        app:layout_constraintVertical_bias="0.502" />
 
     <Button
         android:id="@+id/addFriendButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32sp"
-        android:layout_marginBottom="32sp"
-        android:backgroundTint="@color/blue_secondary"
-        android:fontFamily="@font/acme"
+        android:layout_width="115sp"
+        android:layout_height="50sp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#01BE2D"
+        android:fontFamily="@font/poppins_semibold"
         android:padding="5sp"
         android:text="@string/add"
-        android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:cornerRadius="10sp"
         app:layout_constraintBottom_toBottomOf="@+id/addfriendbuttonbg"
         app:layout_constraintEnd_toEndOf="@+id/addfriendbuttonbg" />
 
+    <EditText
+        android:id="@+id/friendcodebox"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="5sp"
+        android:text="@string/enter_friend_code"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:textSize="25sp"
+        app:cornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
     <Button
         android:id="@+id/exit"
-        android:layout_width="40sp"
-        android:layout_height="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="4sp"
-        android:backgroundTint="@color/blue_secondary"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/acme"
         android:text="@string/x"
         android:textColor="@color/black"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="@+id/addfriendbuttonbg"
         app:layout_constraintTop_toTopOf="@+id/addfriendbuttonbg" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

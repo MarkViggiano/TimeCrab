@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#A7DDFF"
-    tools:context=".MainActivity">
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="#A7DDFF"
+     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/timecrab_logo"
-        android:layout_width="0sp"
-        android:layout_height="216sp"
-        android:layout_marginStart="67sp"
-        android:layout_marginEnd="67sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup"
-        app:srcCompat="@drawable/timecrab2"
-        tools:ignore="MissingConstraints" />
+   <ImageView
+       android:id="@+id/timecrab_logo"
+       android:layout_width="0sp"
+       android:layout_height="216sp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/signup"
+       app:srcCompat="@drawable/timecrab2"
+       tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
         android:layout_width="0sp"
         android:layout_height="75sp"
         android:layout_marginStart="8sp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8sp"
         android:background="@drawable/roundcorners"
         android:backgroundTint="@color/timecrab_blue"
@@ -33,6 +32,7 @@
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_box"
         tools:ignore="MissingConstraints" />
@@ -54,13 +54,13 @@
         android:id="@+id/email_box"
         android:layout_width="0sp"
         android:layout_height="92sp"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="24dp"
         android:scaleType="fitStart"
         android:scaleX=".95"
         android:scaleY=".95"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
         app:srcCompat="@drawable/timecrab_type"
         tools:ignore="MissingConstraints" />
 
@@ -68,10 +68,10 @@
 
         android:id="@+id/signup"
         android:layout_width="0sp"
-        android:layout_height="0sp"
+        android:layout_height="75sp"
         android:layout_marginStart="8sp"
         android:layout_marginEnd="8sp"
-        android:layout_marginBottom="227sp"
+        android:layout_marginBottom="312dp"
         android:background="@drawable/roundcorners"
         android:backgroundTint="@color/timecrab_blue"
         android:fontFamily="@font/acme"
@@ -80,9 +80,8 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -90,73 +89,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16sp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/welcome"
         android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/or_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="184sp"
-        android:layout_marginTop="308sp"
-        android:fontFamily="@font/acme"
-        android:text="@string/or"
-        android:textColor="#009AFB"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/bar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="244sp"
-        android:layout_marginTop="292sp"
-        android:fontFamily="@font/acme"
-        android:text="@string/dashed_bar"
-        android:textColor="@color/timecrab_blue"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/bar2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20sp"
-        android:layout_marginTop="292sp"
-        android:fontFamily="@font/acme"
-        android:text="@string/dashed_bar"
-        android:textColor="@color/timecrab_blue"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="0sp"
-        android:layout_height="0sp"
-        android:layout_marginBottom="354sp"
-        android:background="@color/timecrab_blue"
-        android:fontFamily="@font/acme"
-        android:paddingLeft="15sp"
-        android:paddingTop="0sp"
-        android:text="@string/timecrab"
-        android:textColor="@color/white"
-        android:textSize="50sp"
-        app:layout_constraintBottom_toTopOf="@+id/signup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,TextContrastCheck" />
+        tools:ignore="MissingConstraints" />
+
+   <TextView
+       android:id="@+id/or_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="184sp"
+       android:fontFamily="@font/acme"
+       android:text="@string/or"
+       android:textColor="@color/blue_primary"
+       android:textSize="34sp"
+       app:layout_constraintBottom_toTopOf="@+id/signup"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/login"
+       tools:ignore="MissingConstraints" />
+
+   <TextView
+       android:id="@+id/bar1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="244sp"
+       android:layout_marginBottom="32dp"
+       android:fontFamily="@font/acme"
+       android:text="@string/dashed_bar"
+       android:textColor="@color/timecrab_blue"
+       android:textSize="34sp"
+       app:layout_constraintBottom_toTopOf="@+id/signup"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/login"
+       tools:ignore="MissingConstraints" />
+
+   <TextView
+       android:id="@+id/bar2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="20sp"
+       android:layout_marginBottom="32dp"
+       android:fontFamily="@font/acme"
+       android:text="@string/dashed_bar"
+       android:textColor="@color/timecrab_blue"
+       android:textSize="34sp"
+       app:layout_constraintBottom_toTopOf="@+id/signup"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/login"
+       tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress6"
@@ -189,4 +173,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/password_box" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+ </androidx.constraintlayout.widget.ConstraintLayout>
